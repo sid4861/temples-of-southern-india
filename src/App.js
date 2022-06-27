@@ -58,7 +58,7 @@ function App() {
           }} className=' flex  flex-col items-center justify-evenly' >
             <div>
               <button className=' mt-16 md:mt-0 px-32 py-4 bg-[#2F5B48] text-[#DCCFB4] shadow-[-6px_6px_0px_#CC6957]' onClick={() => window.open("https://opensea.io/collection/templesofsouthernindia", "_blank")} >
-                Buy on opensea
+                <p className='animate-bounce' >Buy on opensea</p>
               </button>
               <div className='mt-16' >
                 <p className='text-[#1E392D]' >Bought an NFT ? connect your wallet to order print</p>
@@ -70,13 +70,13 @@ function App() {
             </div>
             <div className=' mt-8 md:mt-0  w-3/4 md:w-1/2 py-8 md:py-0 ' >
               <div className='flex flex-row items-center ' >
-                <img src={Shipping} />
+                <img src={Shipping} className="animate-bounce" />
                 <p className='text-[14px] text-[#1E392D] ml-4' >
                   For every NFT you own, get a 9X12 framed print shipped with no additional shipping charges.
                 </p>
               </div>
               <div className='flex flex-row items-center mt-4 ' >
-                <img src={Wallet} />
+                <img src={Wallet} className="animate-bounce"/>
                 <p className='text-[14px] text-[#1E392D] ml-4' >
                   Connect from the address which contains the NFT.
                 </p>
